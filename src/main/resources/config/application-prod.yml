@@ -33,9 +33,9 @@ spring:
       enabled: false
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/neptune
-    username: neptune
-    password:
+    url: jdbc:postgresql://aaka3iecosmsd2.cqvtvsotrqup.us-east-2.rds.amazonaws.com:5432/postgres
+    username: postgres
+    password: postgres
     hikari:
       poolName: Hikari
       auto-commit: false
