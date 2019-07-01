@@ -6,6 +6,13 @@
 Bootstrap tweaks
 ===============================================================*/
 
+body {
+  height: 100%;
+  margin: 0;
+  //background-color: rgba(20, 20, 20, 0.88);
+  background: linear-gradient(to left bottom, #2574dc, #4b6de0, #6b63e2, #8857df, #a445d8) no-repeat fixed;
+}
+
 body,
 h1,
 h2,
@@ -180,3 +187,42 @@ ui bootstrap tweaks
 }
 
 /* jhipster-needle-scss-add-main JHipster will add new css style */
+
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+.oswald {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.font-size-50 {
+  font-size: 50px;
+}
+
+.font-size-35 {
+  font-size: 35px;
+}
+
+.name {
+  margin-top: 200px;
+  margin-left: 100px;
+}
+
+//.description {
+//  margin-left: 100px;
+//  color: white;
+//}
+
+.header {
+  padding: 1.5%;
+  margin-top: 20px;
+  border: none;
+}
+
+.description {
+  color: white;
+}

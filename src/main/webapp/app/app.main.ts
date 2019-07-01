@@ -10,5 +10,4 @@ if (module['hot']) {
 
 platformBrowserDynamic()
   .bootstrapModule(NeptuneAppModule, { preserveWhitespaces: true })
-  .then(success => console.log(`Application started`))
   .catch(err => console.error(err));
