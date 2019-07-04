@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
 @keyframes lds-pacman-1 {
   0% {
     -webkit-transform: rotate(0deg);
@@ -149,4 +151,36 @@
 .app-loading .lds-pacman > div:nth-child(1) div:nth-child(3) {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
+}
+
+/* Google Fonts */
+
+.oswald {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.font-size-50 {
+  font-size: 50px;
+}
+
+.font-size-35 {
+  font-size: 35px;
+}
+
+.name {
+  margin-top: 200px;
+  margin-left: 100px;
+}
+
+.header {
+  padding: 1.5%;
+  margin-top: 20px;
+  border: none;
+}
+
+.description {
+  color: white;
 }
