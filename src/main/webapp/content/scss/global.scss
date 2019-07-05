@@ -1,6 +1,7 @@
 @import 'bootstrap-variables';
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
+@import 'avatar';
 
 /* ==============================================================
 Bootstrap tweaks
@@ -209,7 +210,7 @@ ui bootstrap tweaks
 
 .name {
   margin-top: 200px;
-  margin-left: 100px;
+  margin-left: 80px !important;
 }
 
 .header {
@@ -220,4 +221,20 @@ ui bootstrap tweaks
 
 .description {
   color: white;
+}
+
+.logo img {
+  height: 85%;
+  width: auto;
+}
+
+.logo {
+  padding-top: 15px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  height: 85%;
+}
+
+.display-inherit {
+  display: inherit;
 }
