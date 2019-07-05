@@ -13,8 +13,8 @@ import { ErrorHandlerInterceptor } from './blocks/interceptor/errorhandler.inter
 import { NotificationInterceptor } from './blocks/interceptor/notification.interceptor';
 import { NeptuneSharedModule } from 'app/shared';
 import { NeptuneCoreModule } from 'app/core';
-import { NeptuneAppRoutingModule } from './app-routing.module';
 import { NeptuneHomeModule } from './home/home.module';
+import { NeptuneAppRoutingModule } from './app-routing.module';
 import { NeptuneAccountModule } from './account/account.module';
 import { NeptuneEntityModule } from './entities/entity.module';
 import * as moment from 'moment';
