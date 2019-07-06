@@ -1,6 +1,7 @@
 @import 'bootstrap-variables';
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
 @import 'avatar';
 
 /* ==============================================================
@@ -10,7 +11,6 @@ Bootstrap tweaks
 body {
   height: 100%;
   margin: 0;
-  //background-color: rgba(20, 20, 20, 0.88);
   background: linear-gradient(to left bottom, #2574dc, #4b6de0, #6b63e2, #8857df, #a445d8) no-repeat fixed;
 }
 
@@ -192,12 +192,24 @@ ui bootstrap tweaks
 /* Google Fonts */
 
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
 
 .oswald {
   font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.firaSans {
+  font-family: 'Fira Sans', sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
   color: white;
+}
+
+.font-size-70 {
+  font-size: 70px;
 }
 
 .font-size-50 {
@@ -208,33 +220,10 @@ ui bootstrap tweaks
   font-size: 35px;
 }
 
-.name {
-  margin-top: 200px;
-  margin-left: 80px !important;
+.display-block {
+  display: block !important;
 }
 
-.header {
-  padding: 1.5%;
-  margin-top: 20px;
-  border: none;
-}
-
-.description {
-  color: white;
-}
-
-.logo img {
-  height: 85%;
-  width: auto;
-}
-
-.logo {
-  padding-top: 15px;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  height: 85%;
-}
-
-.display-inherit {
-  display: inherit;
+.display-flex {
+  display: flex !important;
 }

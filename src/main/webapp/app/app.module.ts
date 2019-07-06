@@ -17,6 +17,9 @@ import { NeptuneHomeModule } from './home/home.module';
 import { NeptuneAppRoutingModule } from './app-routing.module';
 import { NeptuneAccountModule } from './account/account.module';
 import { NeptuneEntityModule } from './entities/entity.module';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import * as moment from 'moment';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ActiveMenuDirective, ErrorComponent } from './layouts';
@@ -38,7 +41,16 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
     NeptuneAccountModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
     NeptuneEntityModule,
-    NeptuneAppRoutingModule
+    NeptuneAppRoutingModule,
+
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
   providers: [
@@ -69,4 +81,8 @@ export class NeptuneAppModule {
   constructor(private dpConfig: NgbDatepickerConfig) {
     this.dpConfig.minDate = { year: moment().year() - 100, month: 1, day: 1 };
   }
+}
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, '../i18n/', '.json');
 }

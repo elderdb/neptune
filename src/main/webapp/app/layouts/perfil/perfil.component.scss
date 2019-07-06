@@ -1,0 +1,116 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.name {
+  margin-top: 200px;
+  margin-left: 80px !important;
+}
+
+.header {
+  padding: 1.5%;
+  margin-top: 20px;
+  border: none;
+}
+
+.description {
+  color: white;
+}
+
+.logo img {
+  height: 85%;
+  width: auto;
+}
+
+.logo {
+  padding-top: 15px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  height: 85%;
+}
+
+.display-inherit {
+  display: inherit;
+}
+
+@media (min-width: 0px) {
+  .howIam-font {
+    font-size: 13px;
+  }
+  .aboutMe-font {
+    font-size: 20px;
+  }
+  .welcome-font {
+    font-size: 40px;
+  }
+  .name {
+    margin-top: 200px;
+    margin-left: 20px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .howIam-font {
+    font-size: 14px;
+  }
+  .aboutMe-font {
+    font-size: 25px;
+  }
+  .welcome-font {
+    font-size: 50px;
+  }
+  .name {
+    margin-top: 200px;
+    margin-left: 20px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .welcome-font {
+    font-size: 65px;
+  }
+  .aboutMe-font {
+    font-size: 30px;
+  }
+  .name {
+    margin-top: 200px;
+    margin-left: 70px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .howIam-font {
+    font-size: 15px;
+  }
+  .welcome-font {
+    font-size: 70px;
+  }
+  .aboutMe-font {
+    font-size: 40px;
+  }
+  .name {
+    margin-top: 200px;
+    margin-left: 60px !important;
+  }
+}
+
+.language {
+  padding: 5px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.flag {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.flag:hover {
+  opacity: 1;
+}
+
+.break-line {
+  word-wrap: break-word;
+}
