@@ -9,3 +9,4 @@ export * from './profiles/page-ribbon.component';
 export * from './profiles/profile.service';
 export * from './profiles/profile-info.model';
 export * from './perfil/perfil.component';
+export * from './knowledge/knowledge.component';

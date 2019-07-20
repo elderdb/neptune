@@ -1,15 +1,14 @@
 package neptune.application.service.dto;
 
 import neptune.application.config.Constants;
-
 import neptune.application.domain.Authority;
 import neptune.application.domain.User;
+import org.joda.time.DateTime;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-
-import javax.validation.constraints.*;
-import java.time.Instant;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -45,11 +44,11 @@ public class UserDTO {
 
     private String createdBy;
 
-    private Instant createdDate;
+    private DateTime createdDate;
 
     private String lastModifiedBy;
 
-    private Instant lastModifiedDate;
+    private DateTime lastModifiedDate;
 
     private Set<String> authorities;
 
@@ -147,11 +146,11 @@ public class UserDTO {
         this.createdBy = createdBy;
     }
 
-    public Instant getCreatedDate() {
+    public DateTime getCreatedDate() {
         return createdDate;
     }
 
-    public void setCreatedDate(Instant createdDate) {
+    public void setCreatedDate(DateTime createdDate) {
         this.createdDate = createdDate;
     }
 
@@ -163,11 +162,11 @@ public class UserDTO {
         this.lastModifiedBy = lastModifiedBy;
     }
 
-    public Instant getLastModifiedDate() {
+    public DateTime getLastModifiedDate() {
         return lastModifiedDate;
     }
 
-    public void setLastModifiedDate(Instant lastModifiedDate) {
+    public void setLastModifiedDate(DateTime lastModifiedDate) {
         this.lastModifiedDate = lastModifiedDate;
     }
 

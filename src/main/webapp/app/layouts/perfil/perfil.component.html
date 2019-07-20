@@ -1,29 +1,44 @@
-<div class="language">
-    <img class="clickable flag" src="../../../content/images/brazil.png" (click)="setLang('pt-br')">
-    <img class="clickable flag" src="../../../content/images/united-states.png" (click)="setLang('en')">
-    <!--<button (click)="setLang('en')"></button>-->
+<div class="display-inherit row">
+
+    <div class="language float-left">
+        <span class="clickable lang" (click)="setLang('pt-br')" [ngClass]="{ 'active': activeLang == 'pt-br' }">PT</span>
+        <span class="oswald"> - </span>
+        <span class="clickable lang" (click)="setLang('en')" [ngClass]="{ 'active': activeLang == 'en' }">EN</span>
+    </div>
+
+    <h4 class="float-right social-media-padding padding-right-5">
+        <a target="_blank" href="https://www.facebook.com/elder.diasbatista.1">
+            <span class="fab fa-facebook-square h-100 social-media"></span>
+        </a>
+    </h4>
+    <h4 class="float-right social-media-padding ">
+        <a target="_blank" href="https://www.linkedin.com/in/%C3%A9lder-dias-batista-bb30aab1/">
+            <span class="fab fa-linkedin h-100 social-media"></span>
+        </a>
+    </h4>
+
 </div>
+
 <div class="col-md-12 form-group">
     <div class="header">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="name">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-10 col-md-6">
+                            <div class="col-xs-12 col-sm-12 col-md-6">
                                 <h1 class="firaSans welcome-font" [translate]="'home.welcome'"></h1>
                                 <h2 class="firaSans aboutMe-font" [translate]="'home.myNameIs'"></h2>
                                 <div>
                                     <p class="animated fadeInLeft description howIam-font" translate="home.howIam"></p>
                                 </div>
                             </div>
-                            <div class="display-flex col-md-3">
-                                <div class="form-group">
-                                    <div class="row justify-content-center">
-                                        <img class="avatar" src="../../../content/images/avatar3.png">
-                                    </div>
-                                    <div class="row justify-content-center">
-                                        <button type="button" class="btn btn-light aboutMe break-line" translate="home.aboutMe"></button>
+                            <div class="avatar-pos">
+                                <div class="display-flex col-xs-12 col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <div class="row justify-content-center">
+                                            <img class="avatar" src="../../../content/images/avatar.png">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -33,5 +48,19 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="middle-menu">
+<!--    <div class="container h-100">-->
+<!--        <div class="row justify-content-center h-100">-->
+<!--            <div class="email h-100">-->
+<!--                <input type="email" class="form-control h-100 text-center" id="email"-->
+<!--                           placeholder="{{ 'home.enterEmail' | translate }}">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row justify-content-center h-100">-->
+<!--            <small>Receba meu CV</small>-->
+<!--        </div>-->
+<!--    </div>-->
 </div>
 

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { JhiEventManager } from 'ng-jhipster';
 
-import { LoginModalService, AccountService, Account } from 'app/core';
+import { LoginModalService, AccountService, Account, EmailService } from 'app/core';
 
 @Component({
   selector: 'jhi-home',
@@ -15,15 +15,21 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private accountService: AccountService,
+    private emailService: EmailService,
     private loginModalService: LoginModalService,
     private eventManager: JhiEventManager
   ) {}
 
-  ngOnInit() {
-    this.accountService.identity().then((account: Account) => {
-      this.account = account;
-    });
-    this.registerAuthenticationSuccess();
+  ngOnInit() {}
+
+  public testEmail() {
+    this.emailService.save('elderdbspfc@gmail.com').subscribe(
+      (data: String) => {
+        console.log('created: ', data);
+      }, // (1)
+      (error: any) => console.log(error), //(2)
+      () => console.log('completed') //(3)
+    );
   }
 
   registerAuthenticationSuccess() {

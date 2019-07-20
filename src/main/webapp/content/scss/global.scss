@@ -3,6 +3,8 @@
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
 @import 'avatar';
+@import '~balloon-css/balloon.css';
+@import '~@fortawesome/fontawesome-free/css/all.css';
 
 /* ==============================================================
 Bootstrap tweaks
@@ -226,4 +228,13 @@ ui bootstrap tweaks
 
 .display-flex {
   display: flex !important;
+}
+
+.tooltip-big-text {
+  --balloon-font-size: 20px;
+}
+
+.vertical-center {
+  margin-top: auto;
+  margin-bottom: auto;
 }
