@@ -3,12 +3,16 @@
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
 @import 'avatar';
+@import 'knowledge';
 @import '~balloon-css/balloon.css';
 @import '~@fortawesome/fontawesome-free/css/all.css';
 
 /* ==============================================================
 Bootstrap tweaks
 ===============================================================*/
+html {
+  height: 100%;
+}
 
 body {
   height: 100%;
@@ -79,6 +83,10 @@ Generic styles
 
 .pad {
   padding: 10px;
+}
+
+.pad-20 {
+  padding: 20px;
 }
 
 .w-40 {

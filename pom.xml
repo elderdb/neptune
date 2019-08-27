@@ -115,6 +115,11 @@
 
     <dependencies>
 
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-log4j2</artifactId>-->
+<!--        </dependency>-->
+
         <dependency>
             <groupId>org.jadira.usertype</groupId>
             <artifactId>usertype.core</artifactId>
@@ -934,25 +939,25 @@
                                     <arguments>install</arguments>
                                 </configuration>
                             </execution>
+<!--                            <execution>-->
+<!--                                <id>webpack build test</id>-->
+<!--                                <goals>-->
+<!--                                    <goal>npm</goal>-->
+<!--                                </goals>-->
+<!--                                <phase>test</phase>-->
+<!--                                <configuration>-->
+<!--                                    <arguments>run webpack:test</arguments>-->
+<!--                                    <npmInheritsProxyConfigFromMaven>false</npmInheritsProxyConfigFromMaven>-->
+<!--                                </configuration>-->
+<!--                            </execution>-->
                             <execution>
-                                <id>webpack build test</id>
-                                <goals>
-                                    <goal>npm</goal>
-                                </goals>
-                                <phase>test</phase>
-                                <configuration>
-                                    <arguments>run webpack:test</arguments>
-                                    <npmInheritsProxyConfigFromMaven>false</npmInheritsProxyConfigFromMaven>
-                                </configuration>
-                            </execution>
-                            <execution>
-                                <id>webpack build prod</id>
+                                <id>webpack build prod --outputHashing=all</id>
                                 <goals>
                                     <goal>npm</goal>
                                 </goals>
                                 <phase>generate-resources</phase>
                                 <configuration>
-                                    <arguments>run webpack:prod</arguments>
+                                    <arguments>run webpack:prod --outputHashing=all</arguments>
                                     <npmInheritsProxyConfigFromMaven>false</npmInheritsProxyConfigFromMaven>
                                 </configuration>
                             </execution>

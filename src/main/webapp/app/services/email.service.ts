@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
+import { SERVER_API_URL } from 'app/app.constants';
+
 @Injectable({ providedIn: 'root' })
 export class EmailService {
   constructor(private http: HttpClient) {}
@@ -11,6 +13,7 @@ export class EmailService {
   // }
 
   save(email: String): Observable<String> {
-    return this.http.post<String>('http://localhost:8080/api/email', email, {});
+    console.log(SERVER_API_URL);
+    return this.http.post<String>(SERVER_API_URL + '/api/email', email, {});
   }
 }

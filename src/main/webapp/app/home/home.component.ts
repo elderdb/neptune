@@ -21,17 +21,6 @@ export class HomeComponent implements OnInit {
   ) {}
 
   ngOnInit() {}
-
-  public testEmail() {
-    this.emailService.save('elderdbspfc@gmail.com').subscribe(
-      (data: String) => {
-        console.log('created: ', data);
-      }, // (1)
-      (error: any) => console.log(error), //(2)
-      () => console.log('completed') //(3)
-    );
-  }
-
   registerAuthenticationSuccess() {
     this.eventManager.subscribe('authenticationSuccess', message => {
       this.accountService.identity().then(account => {
