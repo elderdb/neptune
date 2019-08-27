@@ -1,0 +1,29 @@
+.about-card {
+  background-color: #150e3e;
+  max-width: 80%;
+  -webkit-box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+}
+
+.aboutMe-font {
+  color: #d0bdff;
+  font-weight: 300;
+}
+
+.aboutMe-title-font {
+  color: white;
+  font-weight: 300;
+}
+
+.city {
+  width: 80%;
+  max-height: 300px;
+}
+
+.elder-photo {
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+}
