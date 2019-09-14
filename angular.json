@@ -32,5 +32,6 @@
   "defaultProject": "neptune",
   "cli": {
     "packageManager": "npm"
-  }
+  },
+  "scripts": ["node_modules/jquery/dist/jquery.js"]
 }

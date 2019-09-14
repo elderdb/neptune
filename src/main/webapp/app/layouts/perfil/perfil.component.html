@@ -1,24 +1,28 @@
-<div class="display-inherit row">
+<section id="menu">
+    <div class="menu-bar">
+        <div class="display-initial row">
 
-    <div class="language float-left">
-        <span class="clickable lang" (click)="setLang('pt-br')" [ngClass]="{ 'active': activeLang == 'pt-br' }">PT</span>
-        <span class="oswald"> - </span>
-        <span class="clickable lang" (click)="setLang('en')" [ngClass]="{ 'active': activeLang == 'en' }">EN</span>
+            <div class="language float-left">
+            <span class="clickable lang" (click)="setLang('pt-br')"
+                  [ngClass]="{ 'active': activeLang == 'pt-br' }">PT</span>
+                <span class="oswald"> - </span>
+                <span class="clickable lang" (click)="setLang('en')"
+                      [ngClass]="{ 'active': activeLang == 'en' }">EN</span>
+            </div>
+
+            <h4 class="float-right social-media-padding padding-right-5">
+                <a target="_blank" href="https://www.facebook.com/elder.diasbatista.1">
+                    <span class="fab fa-facebook-square h-100 social-media"></span>
+                </a>
+            </h4>
+            <h4 class="float-right social-media-padding ">
+                <a target="_blank" href="https://www.linkedin.com/in/%C3%A9lder-dias-batista-bb30aab1/">
+                    <span class="fab fa-linkedin h-100 social-media"></span>
+                </a>
+            </h4>
+        </div>
     </div>
-
-    <h4 class="float-right social-media-padding padding-right-5">
-        <a target="_blank" href="https://www.facebook.com/elder.diasbatista.1">
-            <span class="fab fa-facebook-square h-100 social-media"></span>
-        </a>
-    </h4>
-    <h4 class="float-right social-media-padding ">
-        <a target="_blank" href="https://www.linkedin.com/in/%C3%A9lder-dias-batista-bb30aab1/">
-            <span class="fab fa-linkedin h-100 social-media"></span>
-        </a>
-    </h4>
-
-</div>
-
+</section>
 <div class="col-md-12 form-group">
     <div class="header">
         <div class="row justify-content-center">
@@ -48,6 +52,9 @@
             </div>
         </div>
     </div>
+</div>
+<div class="arrow-down">
+    <a href="#next" (click)="goToKnowledge()" class="fa fa-angle-double-down fa-2x"></a>
 </div>
 
 <!--<div class="middle-menu"></div>-->

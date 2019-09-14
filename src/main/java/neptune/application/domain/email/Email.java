@@ -5,6 +5,7 @@ import neptune.application.domain.AbstractAuditingEntity;
 import javax.persistence.*;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  * A email.
@@ -49,9 +50,10 @@ public class Email extends AbstractAuditingEntity implements Serializable {
         return id != null && id.equals(((Email) o).id);
     }
 
+
     @Override
     public int hashCode() {
-        return 31;
+        return Objects.hash(id, email);
     }
 
     @Override
