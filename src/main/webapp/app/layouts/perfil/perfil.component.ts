@@ -29,9 +29,9 @@ export class PerfilComponent implements OnInit {
   public goToKnowledge() {
     $('html, body').animate(
       {
-        scrollTop: $('#next').offset().top
+        scrollTop: $('#knowledge').offset().top
       },
-      2000
+      1000
     );
   }
 

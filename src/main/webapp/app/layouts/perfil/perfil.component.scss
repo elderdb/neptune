@@ -173,14 +173,16 @@
   display: initial;
 }
 
-//ARROW DOWN ON HOME PAGE
 .arrow-down {
   text-align: center;
   position: absolute;
   bottom: 50px;
-  left: 50%;
   -webkit-animation: move 1s infinite alternate;
   animation: move 1s infinite alternate;
+}
+
+.arrow-down .icon {
+  color: white;
 }
 
 @-webkit-keyframes move {
@@ -200,4 +202,6 @@
   }
 }
 
-// END ARROW DOWN
+.profile-div {
+  height: 100vh;
+}
