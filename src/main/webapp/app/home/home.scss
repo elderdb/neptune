@@ -21,3 +21,19 @@ Main page styles
     background-size: contain;
   }
 }
+
+.first-container {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+.second-container {
+  background-color: black;
+  height: 1200px;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}

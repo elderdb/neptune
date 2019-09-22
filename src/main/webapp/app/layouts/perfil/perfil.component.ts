@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-import { EmailService } from 'app/services/email.service';
+import {Component, OnInit} from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
+import {EmailService} from 'app/services/email.service';
 import * as $ from 'jquery';
 
 @Component({
@@ -29,7 +29,7 @@ export class PerfilComponent implements OnInit {
   public goToKnowledge() {
     $('html, body').animate(
       {
-        scrollTop: $('#knowledge').offset().top
+        scrollTop: $('#knowledge').offset().top - 39
       },
       1000
     );

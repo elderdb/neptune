@@ -6,6 +6,7 @@
 @import 'knowledge';
 @import '~balloon-css/balloon.css';
 @import '~@fortawesome/fontawesome-free/css/all.css';
+@import "~aos/dist/aos.css";
 
 /* ==============================================================
 Bootstrap tweaks
@@ -248,5 +249,71 @@ ui bootstrap tweaks
 }
 
 p {
-  word-break: break-all;
+  word-break: break-word;
+}
+
+.social-media {
+  transition: 0.3s;
+  padding-right: 5px;
+  color: white;
+}
+
+.neptune-menu-bar {
+  background-color: #1e193a;
+  min-height: 39px;
+  z-index: 10000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.language {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.social-media-padding {
+  padding-top: 5px;
+  padding-left: 2px;
+}
+
+
+.lang {
+  transition: 0.3s;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.lang:hover {
+  color: rgba(123, 255, 248, 0.51);
+}
+
+.padding-right-5 {
+  padding-right: 5px;
+}
+
+.display-initial {
+  display: initial;
+}
+
+.lang:hover {
+  color: rgba(123, 255, 248, 0.51);
+}
+
+.lang-active {
+  color: #20e9ffde !important;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.lang {
+  transition: 0.3s;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'jhi-knowledge',
@@ -8,5 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class KnowledgeComponent implements OnInit {
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+
+  }
 }

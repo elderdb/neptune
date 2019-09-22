@@ -29,5 +29,33 @@
 }
 
 .knowledge {
-  background-color: black;
+  background-color: #271540;
+  border-color: white;
+  border-style: solid none none none;
+}
+
+.knowledge .header {
+  margin-top: 100px;
+}
+
+.knowledge-card {
+  background-color: #271540;
+  padding: 10px;
+}
+
+.knowledge-card .header {
+  min-width: 20px;
+  margin: 0;
+  background: #18b4ff;
+
+  border-radius: 10px 10px 0 0;
+}
+
+[aos="fade"] {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+[aos="fade"].aos-animate {
+  opacity: 1;
 }

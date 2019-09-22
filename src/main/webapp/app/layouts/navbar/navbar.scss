@@ -16,6 +16,8 @@ Navbar
 }
 
 .navbar {
+  z-index: 100000;
+
   padding: 0.2rem 1rem;
 
   ul.navbar-nav {
