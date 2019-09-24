@@ -48,11 +48,12 @@
   margin: 0;
   background: #44bcea;
   border-radius: 10px 10px 0 0;
+  color: #001e8c;
 }
 
 .knowledge-card .body {
   min-height: 300px;
-  background-color: white;
+  background-color: #0000006e;
 }
 
 .knowledge-card .body .content {
@@ -62,6 +63,8 @@
 .knowledge-card .text {
   text-align: justify;
   text-justify: inter-word;
+  color: #ffffffeb;
+  font-weight: 100 !important;
 }
 
 .knowledge .title {
