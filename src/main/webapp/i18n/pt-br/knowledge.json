@@ -1,6 +1,19 @@
 {
   "knowledge": {
     "title": "É isso ai! Você deu o primeiro passo!",
-    "subtitle": "Continue descendo e conheça mais sobre mim e meu trabalho"
+    "subtitle": "Continue descendo e conheça mais sobre mim e meu trabalho",
+    "descriptionTitle": "Esses são meus conhecimentos",
+    "aboutMe": {
+      "title": "Sobre Mim",
+      "content": "Olá, muito prazer! Meu nome é Élder Dias Batista, tenho 23 anos e moro em Americana-SP. Programar é o meu maior hobby, sendo assim, fiz disso meu trabalho e hoje atuo como desenvolvedor de software. Logo abaixo você terá um resumo sobre meus conhecimentos."
+    },
+    "degree": {
+      "title": "Formação Acadêmica",
+      "content": "Meu amor por tecnologia começou no ensino técnico, na ETEC Polivalente de Americana. Já formado em Técnico de Informática, eu já tinha em mente qual seria minha graduação! Então, me formei em Análise e Desenvolvimento de Sistemas pela FATEC Americana."
+    },
+    "currentJob": {
+      "title": "Empresa Atual",
+      "content": "Atualmente trabalho na empresa IsCool App como desenvolvedor de sistemas. Atuo nos sistemas IsCool App e IsCool Sync, participando do desenvolvimento do front-end, back-end e banco de dados."
+    }
   }
 }

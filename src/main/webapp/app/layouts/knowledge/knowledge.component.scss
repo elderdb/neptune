@@ -30,8 +30,6 @@
 
 .knowledge {
   background-color: #271540;
-  //border-color: white;
-  //border-style: solid none none none;
 }
 
 .knowledge .header {
@@ -52,7 +50,7 @@
 }
 
 .knowledge-card .body {
-  min-height: 300px;
+  min-height: 150px;
   background-color: #0000006e;
 }
 
@@ -75,4 +73,12 @@
 .knowledge .subtitle {
   color: white;
   margin-top: 5px;
+}
+
+.card-knowledge {
+  margin-top: 50px;
+}
+
+.knowledge-font {
+  font-size: 13px;
 }

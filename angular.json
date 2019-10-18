@@ -33,5 +33,5 @@
   "cli": {
     "packageManager": "npm"
   },
-  "scripts": ["node_modules/jquery/dist/jquery.js"]
+  "scripts": ["src/assets/node_modules/jquery/dist/jquery.js"]
 }
