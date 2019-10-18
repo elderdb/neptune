@@ -48,7 +48,9 @@
                     <h2 class="title text-center" translate="knowledge.descriptionTitle"></h2>
                 </div>
             </div>
-
+            <div id="nav">
+                <ng-image-slider [autoSlide]="true" [showArrow]="false" [imageSize]="{width: 150, height: 150}" [infinite]="true" [animationSpeed]="0.6" [imagePopup]="false" [images]="imageObject" #nav></ng-image-slider>
+            </div>
         </div>
     </div>
 
