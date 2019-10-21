@@ -1,6 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {TranslateService} from '@ngx-translate/core';
-import {EmailService} from 'app/services/email.service';
+import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+
 import * as $ from 'jquery';
 
 @Component({
@@ -11,19 +11,11 @@ import * as $ from 'jquery';
 export class PerfilComponent implements OnInit {
   public activeLang: String;
 
-  public email: String;
-
-  constructor(private translate: TranslateService, private emailService: EmailService) {}
+  constructor(private translate: TranslateService) {}
 
   setLang(lang: string) {
     this.translate.use(lang);
     this.activeLang = lang;
-  }
-
-  public sendEmail() {
-    this.emailService.save(this.email).subscribe((data: String) => {
-      return data;
-    });
   }
 
   public goToKnowledge() {
@@ -37,6 +29,5 @@ export class PerfilComponent implements OnInit {
 
   ngOnInit() {
     this.activeLang = 'pt-br';
-    this.email = null;
   }
 }

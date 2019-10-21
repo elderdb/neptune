@@ -7,6 +7,12 @@
   border-radius: 20px;
 }
 
+@media (max-width: 500px) {
+  .mobile-title {
+    font-size: 22px;
+  }
+}
+
 .aboutMe-font {
   color: #d0bdff;
   font-weight: 300;
@@ -17,19 +23,9 @@
   font-weight: 300;
 }
 
-.city {
-  width: 80%;
-  max-height: 300px;
-}
-
-.elder-photo {
-  width: 150px;
-  height: 150px;
-  box-sizing: border-box;
-}
-
 .knowledge {
   background-color: #271540;
+  display: inline-block;
 }
 
 .knowledge .header {
@@ -81,4 +77,24 @@
 
 .knowledge-font {
   font-size: 13px;
+}
+
+.knowledge-slider {
+  margin-top: 30px;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.email-box {
+  margin-top: 30px;
+}
+
+#sendEmail:focus {
+  outline: 0;
+  box-shadow: none !important;
 }

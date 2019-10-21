@@ -44,19 +44,51 @@
         <div class="form-group">
 
             <div class="row justify-content-center">
-                <div class="col-md-5 text-center">
+                <div class="col-md-12 text-center">
                     <h2 class="title text-center" translate="knowledge.descriptionTitle"></h2>
                 </div>
             </div>
 
-            <div id="nav">
+            <div id="nav" class="knowledge-slider">
                 <ng-image-slider [infinite]="true" [autoSlide]="2" [showArrow]="true"
                                  [imageSize]="{width: 80, height: 80}"
                                  [animationSpeed]="0.6" [imagePopup]="false"
                                  [images]="imageObject" #nav></ng-image-slider>
             </div>
-
         </div>
     </div>
 
+    <div class="col-md-12 text-center">
+        <h2 class="title text-center mobile-title" translate="knowledge.sendAnEmail"></h2>
+    </div>
+
+    <div id="emailBox" class="email-box">
+        <div class="col-md-12 col-sm-12">
+            <div class="input-group mb-3 justify-content-center">
+                <input [(ngModel)]="email" id="email" type="email"
+                       class="form-control col-xs-4 col-sm-6 col-md-5 col-lg-4"
+                       placeholder="{{'home.enterEmail' | translate }}" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button name="sendEmail" id="sendEmail" class="btn btn-info h-100" type="button" (click)="sendEmail()" translate="knowledge.sendButton"></button>
+                </div>
+            </div>
+            <div id="emailAlert" class="row justify-content-center">
+                <div [hidden]="sendEmailStatus.code !== 208" class="text-center animated fadeIn ">
+                    <span class="knowledge-font burlywood-color" translate="knowledge.warnings.alreadyReported"></span>
+                </div>
+                <div [hidden]="sendEmailStatus.code !== 200" class="text-center animated fadeIn">
+                    <span class="knowledge-font burlywood-color" translate="knowledge.warnings.ok"></span>
+                </div>
+                <div [hidden]="sendEmailStatus.code !== 500" class="text-center animated fadeIn">
+                    <span class="knowledge-font burlywood-color" translate="knowledge.warnings.error"></span>
+                </div>
+                <div [hidden]="sendEmailStatus.code !== 406" class="text-center animated fadeIn">
+                    <span class="knowledge-font burlywood-color" translate="knowledge.warnings.invalid"></span>
+                </div>
+                <div [hidden]="!emailIsEmpty" class="text-center animated fadeIn">
+                    <span class="knowledge-font burlywood-color" translate="knowledge.warnings.empty"></span>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

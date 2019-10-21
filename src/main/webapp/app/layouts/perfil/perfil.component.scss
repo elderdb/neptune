@@ -4,7 +4,6 @@
 
 .name {
   margin-top: 100px;
-  //margin-left: 80px !important;
 }
 
 .header {
@@ -26,6 +25,11 @@
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   height: 85%;
+}
+
+.aboutMe-font {
+  font-size: 18px;
+  text-align: center;
 }
 
 .display-inherit {
@@ -51,7 +55,49 @@
   text-align: center;
 }
 
-@media (max-width: 767px) {
+//iPhone 5/Se - 320 x 568
+//Galaxy s5 - 360 x 640
+@media (min-height: 640px) and (max-width: 320px) {
+  .header {
+    margin-top: 0%;
+    border: none;
+  }
+  .welcome-font {
+    font-size: 40px;
+    text-align: center;
+  }
+  .howIam-font {
+    font-size: 15px;
+    text-align: center;
+  }
+  .aboutMe-font {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+//iPhone 6/7/8 - 375 x 667
+//Pixel 2 - 411 x 731
+@media all and (min-height: 731px) and (max-width: 411px) {
+  .header {
+    margin-top: 20%;
+    border: none;
+  }
+  .welcome-font {
+    font-size: 58px;
+    text-align: center;
+  }
+  .howIam-font {
+    font-size: 15px;
+    text-align: center;
+  }
+  .aboutMe-font {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 767px) {
   .howIam-font {
     font-size: 15px;
     text-align: center;
@@ -126,7 +172,7 @@
 
 .email {
   width: 50%;
-  height: 100%;
+  height: 100% !important;
 }
 
 .padding-right-5 {

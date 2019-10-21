@@ -19,7 +19,7 @@ public class Email extends AbstractAuditingEntity implements Serializable {
     @SequenceGenerator(name = "sequenceGenerator")
     private Long id;
 
-    @Size(min = 5, max = 254)
+    @Size(max = 254)
     @Column(length = 254)
     private String email;
 

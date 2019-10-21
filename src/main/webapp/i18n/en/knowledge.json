@@ -3,6 +3,8 @@
     "title": "That's it! You took the first step!",
     "subtitle": "Keep going down and know more about me and my work",
     "descriptionTitle": "These is some of my knowledges",
+    "sendAnEmail": "Enter your email below and get a copy of my resume!",
+    "sendButton": "Get a copy",
     "aboutMe": {
       "title": "About Me",
       "content": "Hello, nice to meet you! My name is Elder Dias Batista, I'm 23 years old and I live in Americana-SP. Programming is my biggest hobby, so I have done my job and today I act as a software developer. Below you will have a summary about my knowledges."
@@ -14,6 +16,13 @@
     "currentJob": {
       "title": "Current job title/company",
       "content": "I currently work at IsCool App as a software developer. I work on the 'IsCool App' and 'IsCool Sync' software, participating in front-end, back-end and database development."
+    },
+    "warnings": {
+      "empty": "Please, fill in the email to receive my resume.",
+      "invalid": "Please, enter a valid email address.",
+      "error": "Oops! I couldn't send you the resume. Please try again",
+      "ok": "Very well! Now just access your email and you will have a copy of my resume!",
+      "alreadyReported": "This email has already been registered and you will receive a copy of my resume!"
     }
   }
 }

@@ -39,6 +39,7 @@ spring:
     hikari:
       poolName: Hikari
       auto-commit: false
+      max-lifetime: 300000
   jpa:
     database-platform: io.github.jhipster.domain.util.FixedPostgreSQL95Dialect
     database: POSTGRESQL

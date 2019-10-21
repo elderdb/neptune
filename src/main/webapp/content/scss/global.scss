@@ -6,7 +6,7 @@
 @import 'knowledge';
 @import '~balloon-css/balloon.css';
 @import '~@fortawesome/fontawesome-free/css/all.css';
-@import "~aos/dist/aos.css";
+@import '~aos/dist/aos.css';
 
 /* ==============================================================
 Bootstrap tweaks
@@ -75,6 +75,14 @@ Generic styles
   padding: 1.5%;
   margin-top: 20px;
   border: none;
+}
+
+.white-color {
+  color: white;
+}
+
+.burlywood-color {
+  color: burlywood;
 }
 
 .error {
@@ -276,7 +284,6 @@ p {
   padding-top: 5px;
   padding-left: 2px;
 }
-
 
 .lang {
   transition: 0.3s;

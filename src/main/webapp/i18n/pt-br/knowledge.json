@@ -3,6 +3,8 @@
     "title": "É isso ai! Você deu o primeiro passo!",
     "subtitle": "Continue descendo e conheça mais sobre mim e meu trabalho",
     "descriptionTitle": "Esses são alguns dos meus conhecimentos",
+    "sendAnEmail": "Informe seu e-mail abaixo e receba uma cópia do meu currículo!",
+    "sendButton": "Receber currículo",
     "aboutMe": {
       "title": "Sobre Mim",
       "content": "Olá, muito prazer! Meu nome é Élder Dias Batista, tenho 23 anos e moro em Americana-SP. Programar é o meu maior hobby, sendo assim, fiz disso meu trabalho e hoje atuo como desenvolvedor de software. Logo abaixo você terá um resumo sobre meus conhecimentos."
@@ -14,6 +16,13 @@
     "currentJob": {
       "title": "Empresa Atual",
       "content": "Atualmente trabalho na empresa IsCool App como desenvolvedor de sistemas. Atuo nos sistemas IsCool App e IsCool Sync, participando do desenvolvimento do front-end, back-end e banco de dados."
+    },
+    "warnings": {
+      "empty": "Por favor, preencha o e-mail para receber meu currículo",
+      "invalid": "Por favor, informe um e-mail válido",
+      "error": "Ops! Não consegui enviar o currículo para você. Por favor, tente novamente",
+      "ok": "Muito bem! Agora basta acessar seu e-mail e terá uma cópia do meu currículo!",
+      "alreadyReported": "Este e-mail já foi cadastrado e receberá uma cópia do meu currículo!"
     }
   }
 }
