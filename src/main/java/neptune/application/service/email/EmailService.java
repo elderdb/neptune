@@ -10,6 +10,7 @@ import com.amazonaws.services.lambda.model.InvokeRequest;
 import com.amazonaws.util.json.Jackson;
 import com.google.common.base.Strings;
 import io.micrometer.core.annotation.Timed;
+import neptune.application.config.AWSCredentials;
 import neptune.application.domain.email.Email;
 import neptune.application.domain.enums.EmailStatus;
 import neptune.application.repository.EmailRepository;
@@ -85,7 +86,7 @@ public class EmailService {
         }
 
         final AWSCredentialsProvider credentials =
-            new AWSStaticCredentialsProvider(new BasicAWSCredentials("AKIAQV2JOEPJYKEEGRGC", "lAncuez/DZoJIOP5Belj2XItXOokG5BaG7lNKbkd"));
+            new AWSStaticCredentialsProvider(new BasicAWSCredentials(AWSCredentials.ACCESS_KEY, AWSCredentials.SECRET_KEY));
 
         final AWSLambda client = AWSLambdaClientBuilder.standard().withCredentials(credentials)
             .withRegion(Regions.US_EAST_1).build();
