@@ -1,6 +1,7 @@
 package neptune.application.domain.email;
 
 import neptune.application.domain.AbstractAuditingEntity;
+import neptune.application.domain.enums.EmailStatus;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
@@ -23,6 +24,9 @@ public class Email extends AbstractAuditingEntity implements Serializable {
     @Column(length = 254)
     private String email;
 
+    @Enumerated(value = EnumType.STRING)
+    private EmailStatus status = EmailStatus.SCHEDULED;
+
     public Long getId() {
         return id;
     }
@@ -37,6 +41,14 @@ public class Email extends AbstractAuditingEntity implements Serializable {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public EmailStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(EmailStatus status) {
+        this.status = status;
     }
 
     @Override
@@ -61,6 +73,7 @@ public class Email extends AbstractAuditingEntity implements Serializable {
         final StringBuffer sb = new StringBuffer("Email{");
         sb.append("id=").append(id);
         sb.append(", email='").append(email).append('\'');
+        sb.append(", status='").append(status).append('\'');
         sb.append('}');
         return sb.toString();
     }

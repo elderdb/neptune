@@ -44,17 +44,20 @@
         <div class="form-group">
 
             <div class="row justify-content-center">
-                <div class="col-md-12 text-center">
+                <div class="col-md-12 text-center">k
                     <h2 class="title text-center" translate="knowledge.descriptionTitle"></h2>
                 </div>
             </div>
 
-            <div id="nav" class="knowledge-slider">
-                <ng-image-slider [infinite]="true" [autoSlide]="2" [showArrow]="true"
-                                 [imageSize]="{width: 80, height: 80}"
-                                 [animationSpeed]="0.6" [imagePopup]="false"
-                                 [images]="imageObject" #nav></ng-image-slider>
+            <div id="knowledge-icons" class="row justify-content-center">
+                <div id="nav" class="knowledge-slider">
+                    <ng-image-slider [infinite]="true" [showArrow]="true"
+                                     [imageSize]="{width: 80, height: 80}"
+                                     [animationSpeed]="0.6" [imagePopup]="false"
+                                     [images]="imageObject" #nav></ng-image-slider>
+                </div>
             </div>
+
         </div>
     </div>
 
