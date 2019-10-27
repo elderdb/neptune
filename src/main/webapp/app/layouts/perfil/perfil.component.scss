@@ -153,11 +153,6 @@
   }
 }
 
-.language {
-  padding-top: 5px;
-  padding-left: 10px;
-}
-
 .break-line {
   word-wrap: break-word;
 }
@@ -228,4 +223,37 @@
 .fixed {
   position: fixed;
   top: 0;
+}
+
+//Full HD
+
+@media (min-width: 1920px) and (min-height: 1080px) {
+  .welcome-font {
+    font-size: 100px;
+    text-align: center;
+  }
+  .howIam-font {
+    font-size: 30px;
+    text-align: center;
+  }
+  .aboutMe-font {
+    font-size: 55px;
+    text-align: center;
+  }
+  .name {
+    margin-top: 50px;
+  }
+  .avatar-pos {
+    width: 100%;
+    justify-content: center !important;
+    display: inline-grid;
+    margin-top: 30px;
+  }
+  .header {
+    margin-top: 10%;
+    border: none;
+  }
+  .fa-2x {
+    font-size: 4em;
+  }
 }

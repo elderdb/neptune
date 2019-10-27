@@ -63,7 +63,7 @@
 
 .knowledge .title {
   color: white;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .knowledge .subtitle {
@@ -110,4 +110,20 @@
 
 .carousel-max-width {
   max-width: 1200px;
+}
+
+//Full HD
+
+@media (min-width: 1920px) and (min-height: 1080px) {
+  .knowledge .subtitle {
+    font-size: 25px;
+  }
+
+  .knowledge-font {
+    font-size: 22px;
+  }
+
+  .knowledge-card .body {
+    min-height: 270px;
+  }
 }
