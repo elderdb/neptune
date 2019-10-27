@@ -92,6 +92,7 @@
 
 .email-box {
   margin-top: 30px;
+  margin-bottom: 3%;
 }
 
 #sendEmail:focus {
@@ -101,6 +102,12 @@
 
 #knowledge-icons {
   display: block;
-  margin-left: 5%;
-  margin-right: 5%;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.carousel-max-width {
+  max-width: 1200px;
 }

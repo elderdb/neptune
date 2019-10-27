@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailService } from 'app/services/email.service';
 import * as $ from 'jquery';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'jhi-knowledge',
@@ -14,7 +15,7 @@ export class KnowledgeComponent implements OnInit {
   public sendEmailStatus: any;
   public emailIsEmpty: boolean = false;
 
-  constructor(private emailService: EmailService) {
+  constructor(private emailService: EmailService, private toastr: ToastrService) {
     this.imageObject = [
       {
         image: '../content/images/java.png',
@@ -155,5 +156,9 @@ export class KnowledgeComponent implements OnInit {
       code: 0,
       body: null
     };
+  }
+
+  showToaster() {
+    this.toastr.info("Hello, I'm the toastr message.", '');
   }
 }

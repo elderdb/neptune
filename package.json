@@ -8,6 +8,7 @@
     "node_modules"
   ],
   "dependencies": {
+    "@angular/animations": "^8.2.12",
     "@angular/common": "8.0.0",
     "@angular/compiler": "8.0.0",
     "@angular/core": "8.0.0",
@@ -41,6 +42,7 @@
     "ng-jhipster": "0.10.1",
     "ngx-cookie": "4.0.2",
     "ngx-infinite-scroll": "7.2.0",
+    "ngx-toastr": "^11.1.2",
     "ngx-webstorage": "4.0.1",
     "rxjs": "6.5.2",
     "swagger-ui": "2.2.10",
