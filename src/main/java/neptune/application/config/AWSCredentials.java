@@ -1,8 +1,30 @@
 package neptune.application.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Service;
+
+@Service
 public class AWSCredentials {
 
-    public static String ACCESS_KEY = "AKIAQV2JOEPJYKEEGRGC";
-    public static String SECRET_KEY = "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";
+    @Autowired
+    @Lazy
+    public AWSCredentials(){
 
+    }
+
+    @Value("#{systemProperties.accessKey}")
+    private String ACCESS_KEY;
+
+    @Value("#{systemProperties.secretKey}")
+    private String SECRET_KEY;
+
+    public String getACCESS_KEY() {
+        return ACCESS_KEY;
+    }
+
+    public String getSECRET_KEY() {
+        return SECRET_KEY;
+    }
 }

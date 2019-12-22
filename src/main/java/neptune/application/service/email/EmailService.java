@@ -34,11 +34,13 @@ public class EmailService {
     private final EmailRepository emailRepository;
     private final Logger log = LogManager.getLogger(EmailService.class);
     private final String lambdaEmailName = "sendEmail";
+    private final AWSCredentials awsCredentials;
 
     @Autowired
     @Lazy
-    public EmailService(EmailRepository emailRepository) {
+    public EmailService(EmailRepository emailRepository, AWSCredentials awsCredentials) {
         this.emailRepository = emailRepository;
+        this.awsCredentials = awsCredentials;
     }
 
     public ResponseEntity<Email> create(@NotNull final String toEmail) {
@@ -86,7 +88,7 @@ public class EmailService {
         }
 
         final AWSCredentialsProvider credentials =
-            new AWSStaticCredentialsProvider(new BasicAWSCredentials(AWSCredentials.ACCESS_KEY, AWSCredentials.SECRET_KEY));
+            new AWSStaticCredentialsProvider(new BasicAWSCredentials(awsCredentials.getACCESS_KEY(), awsCredentials.getSECRET_KEY()));
 
         final AWSLambda client = AWSLambdaClientBuilder.standard().withCredentials(credentials)
             .withRegion(Regions.US_EAST_1).build();

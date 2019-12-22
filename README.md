@@ -1,11 +1,11 @@
-##About this project
+## About this project
 
 The goal of the neptune project is be a professional portfolio,
 provide information about my contacts, degree, certifications and tech knowledges.
 This project has been made to show who I am and a little bit about my knowledges. Feel free to clone it and use it to learn some technologies like Angular, JS, CSS, Java 8, Spring, AWS as lambda, RDS connection, SES and etc.
 You need to have a basic knowledge about AWS environment to deploy a WAR file in ElasticBeanstalk.
 
-##Minimum requirements to build
+## Minimum requirements to build
 
 > Node versão 10.12.27
 
